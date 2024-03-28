@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Menus</title>
+    
+</head>
+<body style="background-image: url(./image/bg1.jpg); background-size: contain;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Gestion Resto</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Commande.html">commandes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Menu.html">menus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Table.html">tables</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Employé.html">employés</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+      <fieldset style="border-radius: 5px;border: 2px solid black;width: 600px;margin-left: 390px;margin-top: 20px;height: 400px;">
+        <form style="width: 500px;margin-left: 40px;margin-top: 30px;">
+            NOM DU PLAT :<input type="text" placeholder="nom" class="form-control" id="nom">
+            PRIX DU PLAT :<input type="text" placeholder="prix Fcfa" class="form-control" id="prix">
+            TYPE :<select id="type" class="form-control">
+                <option>plat</option>
+                <option>boisson</option>
+            </select><br>
+            PHOTO :<input type="file" id="file"><br><br>
+            TEMPS PREPARATION : <input type="number" placeholder="exple: 2 pour deux minutes" id="temps">
+         
+            <button id="ajoute" class="btn btn-outline-dark" style="left: 550px;position: absolute;margin: 50px;">AJOUTER</button>
+        </form>
+        </fieldset><br><br><img id="img" style="position: absolute;left: 20px;top: 120px;border: 1px solid black;height: 300px;width: 300px;border-radius: 10px;"/>
+        <div id="menus" style="padding-left: 240px;padding-top: 5px;"></div>
+        <strong><span style="display: flex;position: absolute;top: 500px;left: 300px;height: 24px;"><p style="padding-right: 140px;">NOM</p><p style="padding-right: 110px;">PRIX(Fcfa)</p><p style="padding-right: 110px;">TYPE</p><p>TEMPS(min)</p></span></strong>
+    
+        <script type="module" src="../Entités/Menu.js"></script>
+
+      <section id="Home">
+
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>La Meilleure<span>Façon</span><br>De Bien Manger</h1>
+            </div>
+
+            <div class="main_image">
+                <img src="image/food first.jpeg">
+            </div>
+
+        </div>
+
+        <p>
+         La gastronomie est l'art d'utiliser la nourriture pour créer le bonheur, faites le bon choix, choisissez nous!
+        </p>
+
+        <div class="main_btn">
+            <a href="#">Order Now</a>
+            <i class="fa-solid fa-angle-right"></i>
+       </div>
+
+    </section>
+
+
+
+    <!--About-->
+
+    <div class="about" id="About">
+        <div class="about_main">
+
+            <div class="image">
+                <img src="image/nourit.png">
+            </div>
+
+            <div class="about_text">
+                <h1><span>A Propos De</span>Nous</h1>
+                <h3>Pourquoi nous choisir?</h3>
+                <p>
+                Nos plats sont faits avec le plus grands soin, de nos meilleurs produits locaux et d'ailleurs, nous vous proposons la crème de tout vos menus et plats favoris, venez chez nous, venez chez FOOD!
+                </p>
+            </div>
+
+        </div>
+
+        <a href="#" class="about_btn">Order Now</a>
+
+    </div>
+
+    <div class="team" id="team">
+        <h1>Nos Differentes<span>Catégories</span></h1>
+
+        <div class="team_box">
+            <div class="profile">
+                <img src="image/entrees.jpeg">
+
+                <div class="info">
+                    <a href="entrees.html" class="about_btn"><h2 class="name">Entrées</h2></a> 
+                    <p class="bio">Selection de nos meilleurs produits.</p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="image/Gastronomie-couv.jpg">
+
+                <div class="info">
+                    <a href="gastronomie.html" class="about_btn"><h2 class="name">Gastronomie</h2></a>
+                    <p class="bio">Selection de nos meilleurs produits.</p>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/fast-food-dubai-scaled.jpeg">
+
+                <div class="info">
+                    <a href="fastfood.html" class="about_btn"><h2 class="name">Fast Food</h2></a>
+                    <p class="bio">Selection de nos meilleurs produits.</p>
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/the_cafe_boissons_chaudes_monde.jpg">
+
+                <div class="info">
+                    <a href="jus.html" class="about_btn"><h2 class="name">Boissons</h2></a>
+                    <p class="bio">Selection de nos meilleurs produits.</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile">
+                <img src="image/desserts.jpg">
+
+                <div class="info">
+                    <a href="dessert.html" class="about_btn"><h2 class="name">Desserts</h2></a>
+                    <p class="bio">Selection de nos meilleurs produits.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--Menu-->
+
+    <div class="menu" id="Menu">
+        <h1>Nos<span>Masterpieces</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/buger.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Burgueur</h2>
+                    <p>
+                        vous avez le choix, boeuf ou poulet.
+                    </p>
+                    <h3>1.000 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+            
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/pasta.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>pates</h2>
+                    <p>
+                        Faites voyager l'Italie jusqu'a vous.
+                    </p>
+                    <h3>2.500 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/lasagna.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>lasagnes</h2>
+                    <p>
+                        Selection de nos meilleurs produits.
+                    </p>
+                    <h3>4.000 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/chocolate_Drink.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Milkshakes</h2>
+                    <p>
+                        Selection de nos meilleurs produits.
+                    </p>
+                    <h3>2.500 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/pizza.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Pizza</h2>
+                    <p>
+                        Selection de nos meilleurs produits.
+                    </p>
+                    <h3>5.000 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/Hot_dog.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Hot Dog</h2>
+                    <p>
+                        Selection de nos meilleurs produits.
+                    </p>
+                    <h3>3.000 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/juse.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Cocktail</h2>
+                    <p>
+                        Selection de nos meilleurs produits.
+                    </p>
+                    <h3>2.000 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/biryani.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Riz Senegalais</h2>
+                    <p>
+                        Selection de nos meilleurs produits.
+                    </p>
+                    <h3>3.500 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/chocolate.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Desserts Aux Chocolats</h2>
+                    <p>
+                        Selection de nos meilleurs produits.
+                    </p>
+                    <h3>3.000 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/ice_cream.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Crème Glacée</h2>
+                    <p>
+                        Selection de nos meilleurs produits.
+                    </p>
+                    <h3>3.000 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/Spanchi.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Cakes</h2>
+                    <p>
+                        Selection de nos meilleurs produits.
+                    </p>
+                    <h3>1.000 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/sandwich.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Sandwich</h2>
+                    <p>
+                        Selection de nos meilleurs produits.
+                    </p>
+                    <h3>2.000 FCFA</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Order Now</a>
+                </div>
+
+            </div> 
+            
+        </div>
+
+    </div>
+  
+    <!--Order-->
+
+    <div class="order" id="Order">
+        <h1><span>Commandez</span>maintenant</h1>
+
+        <div class="order_main">
+
+            <div class="order_image">
+                <img src="image/order_image.png" style="margin-left: 100px;">
+            </div>
+
+            <form action="#">
+
+               
+    <fieldset style="border-radius: 5px;border: 2px solid black;width: 600px;margin-left: 390px;margin-top: 20px;height: 400px;">
+        <form style="width: 500px;margin-left: 40px;margin-top: 30px;">
+            NOM DU PLAT :<input type="text" placeholder="nom" class="form-control" id="nom">
+            PRIX DU PLAT :<input type="text" placeholder="prix Fcfa" class="form-control" id="prix">
+            TYPE :<select id="type" class="form-control">
+                <option>plat</option>
+                <option>boisson</option>
+            </select><br>
+            PHOTO :<input type="file" id="file"><br><br>
+            TEMPS PREPARATION : <input type="number" placeholder="exple: 2 pour deux minutes" id="temps">
+         
+            <button id="ajoute" class="btn btn-outline-dark" style="left: 550px;position: absolute;margin: 50px;">COMMANDER</button>
+        </form>
+        </fieldset><br><br><img id="img" style="position: absolute;left: 20px;top: 120px;border: 1px solid black;height: 300px;width: 300px;border-radius: 10px;"/>
+        <div id="menus" style="padding-left: 240px;padding-top: 5px;"></div>
+        <strong><span style="display: flex;position: absolute;top: 500px;left: 300px;height: 24px;"><p style="padding-right: 140px;">NOM</p><p style="padding-right: 110px;">PRIX(Fcfa)</p><p style="padding-right: 110px;">TYPE</p><p>TEMPS(min)</p></span></strong>
+
+        <script type="module" src="../Entités/Menu.js"></script>
+
+            </form>
+
+        </div>
+
+    </div>
+
+   
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main" id="footer">
+
+            <div class="footer_tag">
+                <h2>Localisations</h2>
+                <p>Yaounde Cameroun</p>
+                <p>Douala Cameroun</p>
+                <p>Brazaville Congo</p>
+                <p>Durban Afrique du Sud</p>
+                <p>Lagos Nigeria </p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Liens Rapides</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Gallary</p>
+                <p>Order</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Nos Contacts</h2>
+                <p>+237 694758948</p>
+                <p>+237 698546787</p>
+                <p>oceanehadama@gmail.com</p>
+                <p>foodshop123@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Nos Services</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Nous Suivre</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> FOOD STORE ENTREPRISE</span></p>
+
+    </footer>
+
+
+
+    
+
+
+
+
+
+
+
+</body>
+</html>

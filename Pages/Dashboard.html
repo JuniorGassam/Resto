@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard</title>
+    <style>
+        *{
+            font-family: Comic Sans MS, Comic Sans, cursive;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(./image/bg1.jpg); background-size: contain;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Gestion Resto</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Commande.html">commandes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Menu.html">menus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Table.html">tables</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Employé.html">employés</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+
+    <div class="card text-center" style="margin: 50px;">
+        <div class="card-header">
+          Total menus
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" id="menus"></h5>
+        </div>
+    </div>
+
+    <div class="card text-center" style="margin: 50px;">
+        <div class="card-header">
+          Total de commandes
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" id="commandes"></h5>
+        </div>
+    </div>
+
+    <div class="card text-center" style="margin: 50px;">
+        <div class="card-header">
+          Montant total
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" id="montant"></h5>
+        </div>
+    </div>
+
+    <div class="card text-center" style="margin: 50px;">
+        <div class="card-header">
+          Total employés
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" id="employes"></h5>
+        </div>
+    </div>
+
+    <h2 style="text-align: center;">Visuel des tables</h2>
+
+
+    <div id="tables" style="margin: 50px;"></div>
+
+
+
+    <script type="module" src="../Entités/Dashboard.js"></script>
+
+</body>
+</html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <section id="Home">
+
+
+    <div class="main">
+
+        <div class="men_text">
+            <h1>La Meilleure<span>Façon</span><br>De Bien Manger</h1>
+        </div>
+
+        <div class="main_image">
+            <img src="image/food first.jpeg">
+        </div>
+
+    </div>
+
+    <p>
+     La gastronomie est l'art d'utiliser la nourriture pour créer le bonheur, faites le bon choix, choisissez nous!
+    </p>
+
+    <div class="main_btn">
+        <a href="#">Order Now</a>
+        <i class="fa-solid fa-angle-right"></i>
+    </div>
+
+</section>
+
+
+<!--About-->
+
+<div class="about" id="About">
+  <div class="about_main">
+
+      <div class="image">
+          <img src="image/nourit.png">
+      </div>
+
+      <div class="about_text">
+          <h1><span>A Propos De</span>Nous</h1>
+          <h3>Pourquoi nous choisir?</h3>
+          <p>
+          Nos plats sont faits avec le plus grands soin, de nos meilleurs produits locaux et d'ailleurs, nous vous proposons la crème de tout vos menus et plats favoris, venez chez nous, venez chez FOOD!
+          </p>
+      </div>
+
+  </div>
+
+  <a href="#" class="about_btn">Order Now</a>
+
+</div>
+  </body>
+</html>
